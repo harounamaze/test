@@ -1,0 +1,66 @@
+           test codingame spring framework
+
+1. le nom du protocol .... utilisé par spring pour envoyer  des messages par  WebSockets ?
+
+Rep : stomp
+
+2.Quelle méthode devriez vous  définir pour permettre de recuperer un objet User à partir de son Id ?
+ Rep : findById( Long id)
+
+3. comment s'appelle  les objets qui sont instancié , managés et detruits  par un containeur IoC ?
+ Rep : bean
+
+4. quel est le nom de l'interface  implementé ci-dessous ?
+ Rep : public class  UserValidator implements XXXXX {}
+         XXXXX= Validator
+
+5.Vous souhaiter que a classe suivante soit détecté  par Scan spring et enregistré en tant que bean
+@XXX
+public class  LoggingServiceImpl impplements LoggingService{}
+ Quelle annotation utlisez vous?
+
+Rép : @Component
+
+
+6. quelle annotation peut on utiliser pour injecter un bean Spring?
+Rép: @Autowired
+
+7. un bean est annoté avec @Lazy, quand est il initialisé?
+
+ Rép: quand il est explicitement récuperé de la bean factory associé et quand il est refparun autre bean 
+
+8.vous créer un repo JPA  representant  des objet Employée ..... 
+
+quelle classe de spring devriez vous etendre?
+rép: Crudrepository
+
+9. vous souhaitez que le bean  Modelprocess soit crée ssi la variable d'envir. exist ?
+Rép : @Conditional(ModelExistsCondition.class)
+
+10.@PreFilter et @PosFilter s'applique à:
+ Rép:
+          @PreFilter  s'applique au parametre d'entrée de  laméyhode annotée
+          @PosFilter  s'applique au valeur de  retour de la méthde annotée
+
+11. ce qui designe les modules spring
+
+Rép : Spring Data, Spring Boot, Spring Web
+
+12. le Nom du container Spring qui instantie,  configure et mnage un certans nombr de beans 
+
+Rép : BeanFactory
+
+13. quel méthods vont etre intercepter par ce  pointcut ?
+@pointcut("execution(public*find*(...))")
+............
+
+Rép:     public String findName()
+         public Char[] findPassword( boolean cache)
+
+
+14.................
+
+Rép: celui par constructeur est preferable car il for le developpeur  à fournir le service ce qui  reduit le risque de " null pointeur exception"
+
+
+15.
