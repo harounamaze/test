@@ -1,0 +1,297 @@
+
+Question Réponse
+
+I.	string
+1.	 Quelle est la différence entre une interface et une classe abstraite?
+Une classe abstraite peut contenir du code dans le corps des méthodes qui possède, ce qui n’est pas autorisé dans une interface. Avec les classes abstraites, vous devez hériter de votre classe et Java n’autorise pas l’héritage multiple. Cependant, vous pouvez implémenter plusieurs interfaces dans votre classe.
+
+
+
+2.	Comment savez-vous si un casting d’objet explicite est nécessaire?
+Si nous affectons un objet de superclasse à une variable d’un type de sous-classe, nous devons effectuer une conversion explicite. Par exemple
+Object a; 
+Person b;
+b = (Person) a;
+Lorsque nous affectons une sous-classe à une variable ayant un type de superclasse, la conversion est effectuée automatiquement.
+
+3.	Quelle est la différence entre un constructeur et une méthode?
+Un constructeur doit avoir le même nom que la classe et ne peuvent pas renvoyer de valeur. Il n’est appelé qu’une seule fois alors qu’une méthode peut être appelée plusieurs fois.
+
+4.	Peut ont écrire une classe Java qui pourrait être utilisée à la fois comme une applet et comme une application?
+La réponse est oui. Nous Ajoutons une méthode main() à l’applet.
+
+
+5.	Expliquer l’utilisation des packages dans Java ?
+C’est un moyen d’organiser des fichiers lorsqu’un projet consiste en plusieurs modules. Il aide également à résoudre les conflits de dénomination lorsque différents packages ont des classes portant le même nom. Le niveau d’accès aux packages vous permet également de protéger les données contre leur utilisation par les classes non autorisées.
+
+
+6.	Que feriez-vous pour comparer deux variables String – l’opérateur == ou la méthode equals ()?
+Nous utiliserons la méthode equals() pour comparer les valeurs des Strings et le == pour vérifier si deux variables pointent sur la même instance d’un objet String .
+
+
+7.	Est-ce qu’une classe interne déclarée à l’intérieur d’une méthode peut-elle accéder aux variables locales de cette méthode?
+C’est possible si ces variables sont déclarées « finale ».
+
+
+
+
+8.	Comment une sous-classe peut appeler une méthode ou un constructeur défini dans une superclasse?
+•	Nous utilisons « super.maMethode(); » pour appeler une méthode défini dans une superclasse(ou classe mère).
+•	Nous utilisons « super(); » pour appeler un constructeur du superclasse, nous écrivons cette instruction dans la première ligne du constructeur du sous-classe.
+
+
+9.	 Qu’est-ce qui peut mal tourner si vous remplacez && avec & dans le code suivant:
+ 
+& conduirait à une exception NullPointerException.
+10.	La méthode compareTo() renvoie _______ ?
+A : true
+B : false
+C : une valeur entière
+Reponse : une valeur entière
+
+
+11.	Quel est la sortie du code suivant?
+ str = "WawToLearn"
+       str.substring(3,5)
+Rep:  La sortie est : To
+
+
+12.	Quelle est la méthode de la classe String qu’on utilise pour extraire une sous-chaîne d’une chaîne ?
+La méthode substring() renvoie une nouvelle chaîne qui est une sous-chaîne de cette chaîne.
+
+
+
+13.	Quelle méthode de la classe String est utilisée pour supprimer les espaces de début et de fin?
+Rép : La méthode trim() est utilisée pour supprimer les espaces de début et de fin.
+ 
+
+14.	Quel est la sortie du code suivant ?
+
+ 
+
+Rép :  s1s2 
+Deux chaînes peuvent être concaténées en utilisant la méthode concat().
+
+15.	 Que faite la méthode replace() ?
+La méthode replace() remplace toutes les occurrences d’un caractère dans une chaîne par un autre caractère.
+ Exemple :
+str ="toto"
+     str.replace('t','c')
+ 
+  Rép:  Sortie : coco
+
+16.	Laquelle de ces classes est utilisée pour créer un objet dont la séquence de caractères est modifiable?
+
+ 
+Rép :StringBuffer est mutable ce qui signifie qu’on peut changer la valeur de l’objet.
+
+
+
+
+17.	Quelle est la méthode de la classe StringBuffer  qui est utilisée pour concaténer une chaîne à la fin d’une autre chaîne?
+
+ Rep: La classe StringBuffer fournit la méthode append() pour concaténer une chaîne à la fin d’une autre chaîne.
+
+
+
+String(char) est un constructeur de la classe String, il initialise la chaîne str avec les valeurs stockées dans le tableau de caractères.
+
+         19. Quel est la sortie du code suivant?
+ 
+La méthode startsWith() est sensible à la casse « Welcome » et « welcome » sont traités différemment, donc il affiche « false ».
+19.	quelle la méthodes de la classe String est utilisée pour obtenir la longueur d’une chaîne de caractères?
+
+Réponse : La méthode length() de la classe String est utilisée pour obtenir la longueur d’une chaîne de caractères.
+
+20.	Lequel de ces constructeurs est utilisé pour créer une chaîne vide
+A : String()
+B : String(0)
+C : String(void)
+Rép: le constructeur utilize est String()
+
+21.	quelle la méthodes de la classe String qui  est utilisée pour vérifier si un objet donné commence par une chaîne particulier?
+La méthode startsWith() de la classe String est utilisée pour vérifier si la chaîne en question commence par une chaîne spécifiée.
+
+
+23.	Quel est la sortie du code suivant?
+   str ="Welcome to"
+        str.charAt(4)
+La réponse est « o » car il est à la position 4.
+charAt() est une méthode de la classe String qui donne le caractère spécifié par l’index. str.charAt(4) donne le 5ème caractère ‘o’.
+24.	Quel est la sortie du code suivant?
+   str = bob"
+   str.length
+Réponse=3
+La méthode length() de la classe String est utilisée pour obtenir la longueur d’une chaîne de caractères.
+
+25.	Quelle est la valeur renvoyée par « str1.compareTo(str2) » si str1 est inférieure à str2?
+
+La fonction compareTo() renvoie zéro lorsque les deux chaînes sont égales, elle renvoie une valeur inférieure à zéro si str1 est inférieure à str2 et une valeur supérieure à zéro lorsque str1 est supérieur à str2.
+
+26.	Quel type de valeur est renvoyée par la méthode equals() de la classe String?
+La méthode equals() de la classe String renvoie une valeur booléenne true si les deux chaînes sont égales et false si elles sont inégales.
+27.	Quel est la sortie du code suivant?
+ 
+Réponse : bob5
+
+(a + = b) qui implique (a = a + b)
+=> a = ‘bob’
+=> y = 5
+a = ‘bob’ + 5 (5 est concaténé avec la chaîne bob)
+
+
+6.	Que se passe-t-il lorsqu’un constructeur est défini pour une interface?
+
+Réponse :  Échec de compilation.
+Le constructeur n’est pas fourni par l’interface car les objets ne peuvent pas être instanciés.
+7.	Que se passera-t-il si nous fournissons l’implémentation d’une méthode dans une interface?
+Réponse : Échec de compilation.
+Les méthodes des interfaces sont toujours abstraites. Ils ne fournissent que la définition de méthode.
+8.	Que se passe-t-il lorsque nous accédons à la même variable définie dans deux interfaces implémentées par la même classe?
+Réponse : interfaceName.variableName doit être défini
+La machine virtuelle Java (JVM) doit savoir distinctement quelle valeur de variable elle doit utiliser. Pour éviter toute confusion, « interfaceName.variableName » est obligatoire.
+
+
+
+
+ 
+
+2.	quelle est la méthodes supprime tous les éléments d’une collection?
+
+La méthode clear() supprime tous les éléments d’une collection.
+
+3.	Qu’est-ce que Collection en Java?
+
+Une collection est un objet qui représente un groupe d’objets.
+4.	Quelle interface n’autorise pas les doublons?
+ 
+Réponse : A
+ 
+
+
+5.	. Laquelle de ces classes de collection a la capacité d’évoluer de façon dynamique?
+Réponse: ArrayList 
+ArrayList est un tableau redimensionnable qui implémente l’interface List.
+6.	L’interface Comparable contient la méthode ___________ ?
+L’interface Comparable est utilisée pour classer les objets d’une classe définie par l’utilisateur. Cette interface se trouve dans le package java.lang et contient une seule méthode nommée compareTo(Object). Il fournit une seule séquence de tri, c’est-à-dire que vous pouvez trier les éléments sur la base d’un seul membre de données.
+
+
+NB : Collection est à la fois framework et interface.
+
+
+IV.	 Programmation Orientée Objet :
+
+1.	A quoi sert la surcharge de méthode dans Java?
+Lorsque nous avons plusieurs méthodes avec le même nom mais des fonctionnalités différentes, cela s’appelle une surcharge de méthode. Par exemple. System.out.println() est surchargé car nous avons 6 ou 7 méthode println() acceptant chacun un type de paramètre différent.
+
+2.	A quoi sert la redéfinition de méthode dans Java
+C’est l’un de la magie de la programmation orientée objet où la méthode est choisie en fonction d’un objet à l’exécution. Afin de redéfinir la méthode, nous avons besoin de l’héritage et du polymorphisme, car nous avons besoin d’une méthode avec la même signature dans la superclasse et la sous-classe. Un appel à une telle méthode est résolu au moment de l’exécution en fonction de l’objet réel et non du type de la variable.
+
+3.	A quoi sert le masquage de méthode dans Java?
+Lorsque vous déclarez deux méthodes statiques avec le même nom et la même signature dans la classe mère et la sous-classe, elles se masquent l’une l’autre, un appel à la méthode dans la sous-classe appelle la méthode statique déclarée dans cette classe et un appel à la même méthode est résolu à la méthode statique déclarée dans la classe mère.
+4.	Quelle est la différence entre Composition et Héritage dans la POO?
+Bien que l’héritage et la composition permettent la réutilisation du code, la principale différence entre la composition et l’héritage réside dans le fait que la composition permet la réutilisation du code sans hériter la classe mère.
+5.	Quel sont les 5 principes du pattern SOLID?
+SOLID est le terme donné par Oncle Bob, chaque caractère représente un principe de conception:
+•	S pour le principe Single Responsibility
+•	pour le principe Open closed design
+•	L pour le principe Liskov substitution
+•	I pour le principe Interface segregation
+•	D pour le principe Dependency inversion
+6.	Quelle est la différence entre les patterns Decorator, Proxy et Adapter en Java?
+Ces patterns ressemblent beaucoup parce que leur structure ou leur diagramme de classe est très similaire, mais leur intention est très différente. Decorator ajoute des fonctionnalités supplémentaires sans toucher à la classe, Proxy fournit un contrôle d’accès et Adapter est utilisé pour faire fonctionner deux interfaces incompatibles.
+7.	Quand utiliser le pattern de conception Singleton en Java
+Lorsque nous n’avons besoin que d’une instance d’une classe et que nous souhaitons qu’elle soit disponible globalement, nous pouvons utiliser ce pattern. Ce n’est pas gratuit car cela augmente le couplage entre les classes et les rend difficiles à tester.
+
+
+
+
+8.	Quelle est la différence entre State et Strategy Pattern?
+Bien que la structure ou le diagramme de classes du pattern State et Strategy soit identique, leur intention est complètement différente. Le pattern State est utilisé pour faire quelque chose de spécifique en fonction de l’état tandis que le pattern Strategy vous permet de basculer entre les algorithmes sans changer le code qui l’utilise.
+
+9.	A quoi sert le pattern Decorator ?
+Le pattern Decorator permet à un utilisateur d’ajouter de nouvelles fonctionnalités à un objet existant sans modifier sa structure. Ce type de pattern est inclus dans le pattern structurel, car il agit comme une enveloppe pour la classe existante. Ce pattern crée une classe décorateur qui enveloppe la classe d’origine et fournit des fonctionnalités supplémentaires en préservant la signature des méthodes de classe.
+ 
+10.	Quelle est la différence entre une interface et une classe abstraite?
+Une classe abstraite peut avoir du code dans le corp des méthodes qui posséde, ce qui n’est pas autorisé dans une interface. Avec les classes abstraites, vous devez hériter de votre classe et Java n’autorise pas l’héritage multiple .Cependant, vous pouvez implémenter plusieurs interfaces dans votre classe.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+V.	QCM Java 8
+1.	Les Lambdas introduites dans Java 8 nous permettent de traiter ………………?
+
+Réponse : Code en tant que données
+
+2.	L’API Streams nouvellement introduite est disponible dans quel package de java 8?
+
+Réponse :java.util.stream
+
+
+Stream est une nouvelle couche abstraite introduite dans Java 8. En utilisant stream, nous pouvons traiter les données d’une manière déclarative similaire aux instructions SQL.
+
+3.	 Quelle classe peut être utilisée à la place de « System.getCurrentTimeMillis() » pour obtenir une date et une heure dans Java 8?
+
+Réponse :  Clock
+
+4.	 Les expressions lambda dans java 8 sont basées sur 
+_____ ?
+
+Réponse :  Programmation fonctionnelle
+
+5.	Combien de méthodes existe-t-il dans une interface fonctionnelle en Java 8?
+Une interface fonctionnelle est une interface qui contient une seule méthode abstraite. Ils ne peuvent présenter qu’une seule fonctionnalité. À partir de Java 8, les expressions lambda peuvent être utilisées pour représenter l’instance d’une interface fonctionnelle.
+
+6.	Dans les interfaces Java 8, les méthodes peuvent êtr_ ?
+-	Default et
+-	Abstract
+
+7.	Quel est le type de retour de l’expression lambda?
+Réponse : Function
+
+
+
+8.	Quelle est la nouvelle méthode introduite dans java 8 pour parcourir une collection?
+
+Réponse : StringList.forEach()
+
+9.	Quels sont les deux types de Streams proposés par Java ?
+Réponse : Séquentiel et parallèle
+ 
+
+
+10.	L’API Java 8 qui prennent en charge les opérations d’agrégation séquentielles et parallèles?
+
+La réponse est :  Streams
+
+11.	Que signifie SAM dans le contexte de l’interface fonctionnelle?
+
+L’interface SAM signifie Single Abstract Method. L’interface fonctionnelle est également connue sous le nom de « interface SAM » car elle ne contient qu’une seule méthode abstraite.
+
+12.	Nashorn le nouveau moteur JavaScript est une implémentation de ____ ?
+	
+Réponse : javax.script.ScriptEngine
+
+13.	Dans java 8, Function est __ ?
+Réponse :  une Interface
+
+14.	Dans java 8, Predicate est ______ ?
+
+Réponse :  une Interface
+
+15.	Quelle méthode peut être utilisée pour vérifier null sur une variable Optional dans Java 8 ?
+
+Réponse : isPresent()
+
+
+
